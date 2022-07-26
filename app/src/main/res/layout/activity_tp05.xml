@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TP05">
+
+    <TextView
+        android:id="@+id/txtNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="NOM"
+        app:layout_constraintStart_toStartOf="@+id/txtDateNaissance"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtPrenom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Prenom"
+        app:layout_constraintStart_toStartOf="@+id/txtDateNaissance"
+        app:layout_constraintTop_toBottomOf="@+id/txtNom" />
+
+    <TextView
+        android:id="@+id/txtDateNaissance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:text="Date de naissance"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPrenom" />
+
+    <TextView
+        android:id="@+id/txtAdresse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Adresse"
+        app:layout_constraintStart_toStartOf="@+id/txtDateNaissance"
+        app:layout_constraintTop_toBottomOf="@+id/txtDateNaissance" />
+
+    <TextView
+        android:id="@+id/txtBoitePostale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Boite postale"
+        app:layout_constraintStart_toStartOf="@+id/txtDateNaissance"
+        app:layout_constraintTop_toBottomOf="@+id/txtAdresse" />
+
+    <Button
+        android:id="@+id/btnEnvoyer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="ENVOYER"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnEfface" />
+
+    <Button
+        android:id="@+id/btnEfface"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="200dp"
+        android:text="EFFACER"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtBoitepostale" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="QUITTER"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEnvoyer" />
+
+    <EditText
+        android:id="@+id/edtNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="nom"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtDateNaissance"
+        app:layout_constraintTop_toTopOf="@+id/txtNom" />
+
+    <EditText
+        android:id="@+id/edtPrenom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="prenom"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtDateNaissance"
+        app:layout_constraintTop_toTopOf="@+id/txtPrenom" />
+
+    <EditText
+        android:id="@+id/edtDateNaissance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="09/03/2000"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtDateNaissance" />
+
+    <EditText
+        android:id="@+id/edtAdresse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Adresse"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtDateNaissance"
+        app:layout_constraintTop_toTopOf="@+id/txtAdresse" />
+
+    <EditText
+        android:id="@+id/edtBoitepostale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Boite Postale"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtDateNaissance"
+        app:layout_constraintTop_toTopOf="@+id/txtBoitePostale" />
+</androidx.constraintlayout.widget.ConstraintLayout>
